@@ -1,6 +1,6 @@
-import { invoke } from "@tauri-apps/api/core";
+//import { invoke } from "@tauri-apps/api/core";
 import { scan, Format, requestPermissions, checkPermissions } from '@tauri-apps/plugin-barcode-scanner';
-import { exit, relaunch } from '@tauri-apps/plugin-process';
+//import { exit, relaunch } from '@tauri-apps/plugin-process';
 import { fetch } from '@tauri-apps/plugin-http';
 
 
