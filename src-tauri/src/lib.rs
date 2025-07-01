@@ -1,5 +1,5 @@
 // Learn more about Tauri commands at https://tauri.app/develop/calling-rust/
-use tauri_plugin_barcode_scanner;
+// use tauri_plugin_barcode_scanner;
 
 #[tauri::command]
 fn greet(name: &str) -> String {
