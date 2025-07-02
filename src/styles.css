@@ -162,8 +162,86 @@ html.scanning {
 }
 
 p {
+  text-wrap: pretty;
   word-wrap: break-word;     /* break long words/URLs */
   overflow-wrap: break-word; /* same as word-wrap, better support */
   white-space: normal;       /* allow wrapping */
   word-break: break-all;     /* breaks anywhere if needed */
 }
+
+body {
+            font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+            width: 100%;
+        }
+
+        .square {
+            background-color: #808080;
+            aspect-ratio: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: white;
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+
+        .description {
+            font-size: 0.9rem;
+            color: white;
+            font-weight: normal;
+        }
+        .table-container {
+            margin-top: 30px;
+            width: 100%;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        .data-table th,
+        .data-table td {
+            padding: 12px;
+            text-align: left;
+            border-right: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .data-table th:last-child,
+        .data-table td:last-child {
+            border-right: none;
+        }
+
+        .data-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .data-table th {
+            background-color: #f8f9fa;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .data-table td {
+            color: #666;
+        }
